@@ -1,0 +1,36 @@
+DELETE https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/1
+####
+
+POST https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/
+Content-Type: application/json
+
+{
+    "id": 7,
+    "busNumber": "BN201",
+    "routeSource": "New York",
+    "routeDestination": "Wa2shington",
+    "passengerName": "Joh2n Doe",
+    "bookingDate": "2025-01-20"
+}
+####
+
+
+PUT https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/6
+Content-Type: application/json
+
+{
+    "busNumber": "BN202",
+    "routeSource": "New York",
+    "routeDestination": "Washington",
+    "passengerName": "John Doe 2",
+    "bookingDate": "2025-01-20"
+}
+###
+
+GET https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/
+
+
+###
+
+GET https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/2
+

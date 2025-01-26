@@ -1,0 +1,10 @@
+<h2>Delete Confirmation</h2>
+<div>
+    <p>Bus Number: {{bus.busNumber}}</p>
+    <p>Route Source: {{bus.routeSource}}</p>
+    <p>Route Destination: {{bus.routeDestination}}</p>
+    <p>Passenger Name: {{bus.passengerName}}</p>
+    <p>BookingDate: {{bus.bookingDate}}</p>
+</div>
+<button class="delete-confirm" type="button" (click)="confirmDelete(bus.id);">Confirm Delete</button>
+<button class="delete-confirm" type="button" (click)="cancelDelete();">Cancel</button>

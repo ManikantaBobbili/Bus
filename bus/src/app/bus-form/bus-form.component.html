@@ -1,0 +1,50 @@
+<form #busForm="ngForm" (ngSubmit)="addOrEditBus();">
+    <div class="form-group">
+        <label for="busNumber">Bus Number</label>
+        <input type="text" id="busNumber" name="busNumber" [(ngModel)]="newBus.busNumber" required>
+        <div class="error-message" *ngIf="busForm.submitted && !newBus.busNumber">
+            <div>
+                Bus Number is required
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="routeSource">Route Source Number</label>
+        <input type="text" id="routeSource" name="routeSource" [(ngModel)]="newBus.routeSource" required>
+        <div class="error-message" *ngIf="busForm.submitted && !newBus.routeSource">
+            <div>
+                Route Source is required
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="routeDestination">Route Destination</label>
+        <input type="text" id="routeDestination" name="routeDestination" [(ngModel)]="newBus.routeDestination" required>
+        <div class="error-message" *ngIf="busForm.submitted && !newBus.routeDestination">
+            <div>
+                Route Destination is required
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="passengerName">Passenger Name</label>
+        <input type="text" id="passengerName" name="passengerName" [(ngModel)]="newBus.passengerName" required>
+        <div class="error-message" *ngIf="busForm.submitted && !newBus.passengerName">
+            <div>
+                Passenger Name is required
+            </div>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="bookingDate">Booking Date</label>
+        <input type="date" id="bookingDate" name="bookingDate" [(ngModel)]="newBus.bookingDate" required>
+        <div class="error-message" *ngIf="busForm.submitted && !newBus.bookingDate">
+            <div>
+                Booking Date is required
+            </div>
+        </div>
+    </div>
+    
+    <button type="submit">{{isEditMode ? "Update Bus" : "Add Bus"}}</button>
+
+</form>

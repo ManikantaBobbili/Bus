@@ -1,0 +1,30 @@
+<h1>Bus List</h1>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Bus Number</th>
+            <th>Route Source</th>
+            <th>Route Destination</th>
+            <th>Passenger Name</th>
+            <th>Booking Date</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let b of buses">
+            <td>{{b.id}}</td>
+            <td>{{b.busNumber}}</td>
+            <td>{{b.routeSource}}</td>
+            <td>{{b.routeDestination}}</td>
+            <td>{{b.passengerName}}</td>
+            <td>{{b.bookingDate | date:'mediumDate'}}</td>
+            <td>
+                <button class="edit-button" id="edit" (click)="editBus(b.id);">Edit</button>
+                <button class="delete-button" id="delete" (click)="deleteBus(b.id);">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+
+</table>
