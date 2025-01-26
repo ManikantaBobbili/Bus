@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class BusService {
-  apiUrl="https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/";
+  apiUrl="https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses";
 
   constructor( private http:HttpClient) { }
   addBus(bus:Bus):Observable<Bus>{

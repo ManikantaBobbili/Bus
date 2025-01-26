@@ -1,11 +1,10 @@
-DELETE https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/1
+DELETE https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/2
 ####
 
 POST https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/
 Content-Type: application/json
 
 {
-    "id": 7,
     "busNumber": "BN201",
     "routeSource": "New York",
     "routeDestination": "Wa2shington",
@@ -32,5 +31,4 @@ GET https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/
 
 ###
 
-GET https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/2
-
+GET https://reimagined-winner-9wxqvgr65pxc7vwg-3000.app.github.dev/buses/4
