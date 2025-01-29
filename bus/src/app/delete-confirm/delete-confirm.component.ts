@@ -19,7 +19,7 @@ export class DeleteConfirmComponent implements OnInit {
     passengerName: '',
     bookingDate: ''
   };
-  id:number=0;
+  id!:number;
   
   constructor(private ng:NgZone,private route:ActivatedRoute,private busService:BusService,private r :Router) { }
 
