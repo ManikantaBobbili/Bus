@@ -19,9 +19,9 @@ export class DeleteConfirmComponent implements OnInit {
     passengerName: '',
     bookingDate: ''
   };
-  id!:number;
+  id!:any;
   
-  constructor(private ng:NgZone,private route:ActivatedRoute,private busService:BusService,private r :Router) { }
+  constructor(private route:ActivatedRoute,private busService:BusService,private r :Router) { }
 
   ngOnInit(): void {
     this.route.params.subscribe(params=>{

@@ -21,6 +21,8 @@
             <td>{{b.passengerName}}</td>
             <td>{{b.bookingDate | date:'mediumDate'}}</td>
             <td>
+                <!-- <button class="view-button" id="view" (click)="getBus(b.id);">View</button> -->
+                 <button routerLink="/view/{{b.id}}">View</button>
                 <button class="edit-button" id="edit" (click)="editBus(b.id);">Edit</button>
                 <button class="delete-button" id="delete" (click)="deleteBus(b.id);">Delete</button>
             </td>

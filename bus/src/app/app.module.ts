@@ -9,6 +9,7 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { BusFormComponent } from './bus-form/bus-form.component';
 import { BusListComponent } from './bus-list/bus-list.component';
 import { DeleteConfirmComponent } from './delete-confirm/delete-confirm.component';
+import { BusViewComponent } from './bus-view/bus-view.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { DeleteConfirmComponent } from './delete-confirm/delete-confirm.componen
     HeaderComponent,
     BusFormComponent,
     BusListComponent,
-    DeleteConfirmComponent
+    DeleteConfirmComponent,
+    BusViewComponent
   ],
   imports: [
     ReactiveFormsModule,

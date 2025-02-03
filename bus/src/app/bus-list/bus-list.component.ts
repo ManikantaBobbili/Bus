@@ -21,6 +21,10 @@ export class BusListComponent implements OnInit {
       this.buses = data;
     });
   }
+
+  // getBus(id:any){
+  //   this.router.navigate(['getBus/',id]);
+  // }
   editBus(id:any) {
     this.router.navigate(['editBus/', id]);
   }
